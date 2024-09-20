@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header{
+    padding: 1rem 10rem;
+    background-color: #d4d4d4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 40px;
+    cursor:default;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+}
+
+nav button{
+    padding: 5px 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#d4d4d4;
+    border: 0;
+    cursor: pointer;
+}
+
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.home-page .right{
+    width: 90%;
+}
+
+.home-page .left{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-size: 30px;
+    padding-left: 60px;
+}
+
+.home-page .left .buy{
+    width: 200px;
+    padding: 1rem 2rem;
+    border-radius: 26px;
+    border: 2px solid black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer{
+    padding: 4px;
+    background-color: #e5e5e5;
+    width: 100%;
+    text-align: center;
+}
