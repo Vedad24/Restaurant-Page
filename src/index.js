@@ -1,33 +1,18 @@
 import "./styles.css";
 import { homePage } from "./home.js";
+import { menuPage } from "./menu.js";
+import { aboutPage } from "./about.js";
 
-const display = function () {
+homePage();
 
-    let navbar, homeBtn, menuBtn, aboutBtn;
+function navFunctionality() {
+    const navHome = document.querySelector(".home");
+    const navMenu = document.querySelector(".menu");
+    const navAbout = document.querySelector(".about");
 
-    const init = function () {
-        cacheNav();
-        appendEvent();
-    }
+    navHome.addEventListener("click", homePage);
+    navMenu.addEventListener("click", menuPage);
+    navAbout.addEventListener("click", aboutPage);
+}
 
-    const cacheNav = () => {
-        navbar = document.querySelector(".navbar");
-        homeBtn = document.querySelector(".home");
-        menuBtn = document.querySelector(".menu");
-        aboutBtn = document.querySelector(".about");
-    }
-
-    const appendEvent = () => {
-        homeBtn.addEventListener("click", () => {
-            homePage.init();
-        });
-    }
-
-    return {
-        init,
-    }
-}();
-
-document.addEventListener('DOMContentLoaded', () => {
-    display.init();
-});
+navFunctionality();
