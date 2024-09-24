@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,29 +14,39 @@ body {
 
 header {
     padding: 1rem 10rem;
-    background-color: #d4d4d4;
+    background-color: #D32F2F;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 header h1 {
     font-size: 40px;
     cursor: default;
+    font-weight: 300;
+    font-family: "Lobster", sans-serif;
 }
 
 nav {
     display: flex;
     gap: 2rem;
+    margin-top: 5px;
 }
 
 nav button {
     padding: 5px 1rem;
     font-size: 20px;
     font-weight: bold;
-    background-color: #d4d4d4;
+    background-color: #D32F2F;
     border: 0;
     cursor: pointer;
+    color: white;
+}
+
+nav button:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .content {
@@ -43,6 +55,7 @@ nav button {
     justify-content: center;
     overflow: scroll;
     overflow-x: hidden;
+    background-color: #FFF5E1;
 }
 
 .home-page {
@@ -62,16 +75,21 @@ nav button {
     gap: 4rem;
     font-size: 30px;
     padding-left: 60px;
+    color: #333333;
 }
 
 .home-page .left .buy {
     width: 200px;
     padding: 1rem 2rem;
     border-radius: 26px;
-    border: 2px solid black;
     font-size: 20px;
+    border: 0;
     cursor: pointer;
+    background-color: #D32F2F;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.55) 2px 2px 2px;
 }
+ 
 
 .menuSection {
     margin-top: 40px;
@@ -81,6 +99,7 @@ nav button {
     align-items: center;
     width: 100%;
     height: 100%;
+    color: #333333;
 }
 
 .menuItems {
@@ -152,6 +171,7 @@ nav button {
     align-items: center;
     padding-top: 4rem;
     gap: 2rem;
+    color: #333333;
 }
 
 .aboutText .title{
@@ -166,8 +186,14 @@ nav button {
 }
 
 footer {
-    padding: 4px;
-    background-color: #e5e5e5;
+    padding: 6px;
+    background-color: #D32F2F;
     width: 100%;
     text-align: center;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: beige;
 }
