@@ -5,7 +5,6 @@ export function menuPage() {
     const title = document.createElement("h1");
     title.innerHTML = "Our Menu";
     menuSection.appendChild(title);
-
     const menu = makeEl("div", "menuItems");
     menuSection.appendChild(menu);
 
