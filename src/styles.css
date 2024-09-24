@@ -116,6 +116,53 @@ nav button {
 .item p {
     width: 45ch;
     text-align: center;
+    font-weight: 500;
+}
+
+.aboutSection{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem 2rem;
+}
+
+.gallery img{
+    border-radius: 50px;
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+    padding: 0.5rem;
+}
+
+.gallery img:first-child{
+    grid-column: 1/3;
+    align-self: end;
+}
+
+.aboutText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    gap: 2rem;
+}
+
+.aboutText .title{
+    text-align: center;
+    font-size: 50px;
+}
+
+.aboutText .description{
+    text-align: center;
+    width: 46ch;
+    font-size: 26px;
 }
 
 footer {

@@ -1,4 +1,5 @@
 import pastaImage from "./home-pasta.png";
+import { menuPage } from "./menu";
 
 export function homePage() {
     const contentSection = document.querySelector(".content");
@@ -14,6 +15,7 @@ export function homePage() {
     const buyButton = document.querySelector(".buy");
     buyButton.innerHTML = "Order Now";
     buyButton.type = "button";
+    buyButton.addEventListener("click", menuPage);
 }
 
 const makeEl = (typeName, className) => {
